@@ -37,12 +37,27 @@ body {
   width: 100vw;
 }
 
+.Card {
+  width: 250px;
+  height: 350px;
+  transition: .2s ease-in-out;
+  cursor: pointer;
+}
+
+.Card-more {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  transition: .2 ease-in-out;
+}
 
 .button-content {
   position: relative;
   background-color: #e2e8f0;
-  padding: 250px 250px;
+  padding: 80px 70px;
+  border-radius: 50%;
   overflow: hidden;
+  transition: .2 ease-in-out;
 }
 
 
@@ -61,6 +76,7 @@ body {
   z-index: 10;
   color: #475569;
   transition: .7 ease-in-out;
+  font-size: 1.3rem;
 }
 
 .button-shape-1 {
