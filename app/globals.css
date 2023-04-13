@@ -1,27 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+body {
+  height: 100vh;
+  overflow: scroll;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+.hero {
+  background-image: url('/hero-bg.jpg');
+  /*background-image: url('https://images.unsplash.com/photo-1482977036925-e8fcaa643657?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80');*/
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: relative;
+  height: 90vh;
+}
+
+.gradient-text {
+  font-weight: bold;
+  letter-spacing: 1px;
+  background: linear-gradient(135deg, rgb(240, 240, 240), rgb(63, 63, 63), rgb(237, 237, 237)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradient 8s ease-in-out infinite;
+  background-size: 200% 200%;
+}
+
+.skills {
+  background: url('/skill-bg.gif');
+  background-size: contain;
+  background-position: center;
+  height: 85vh;
+  width: 100vw;
+}
+
+
+.button-content {
+  position: relative;
+  background-color: #e2e8f0;
+  padding: 250px 250px;
+  overflow: hidden;
+}
+
+
+.button-content div {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  filter: blur(15px);
+}
+
+.button-text {
+  position: relative;
+  z-index: 10;
+  color: #475569;
+  transition: .7 ease-in-out;
+}
+
+.button-shape-1 {
+  background-color: #EFF5F5;
+  transform: translate(-48px, -26px);
+  animation: shape-1 6s 1s ease-out infinite; 
+  transition: .5s ease-in-out;
+}
+
+.button-shape-2 {
+  background-color: #497174;
+  transform: translate(-12px, 26px);
+  animation: shape-2 6s ease-in infinite;
+  transition: .5s ease-in-out;
+}
+
+.button-shape-3 {
+  background-color: #EB6440;
+  transform: translate(20px, -26px);
+  animation: shape-3 6s ease-out infinite;
+  transition: .5s ease-in-out;
+}
+
+.button-shape-4 {
+  background-color: #D6E4E5;
+  transform: translate(48px, 26px);
+  animation: shape-4 6s 1s ease-in infinite;
+  transition: .5s ease-in-out;
+}
+
+.Card-more:hover .button-text {
+  color: #f1f5f9;
+}
+
+.Card-more:hover .button-shape-1 {
+  background-color: #ECF2FF;
+}
+
+.Card-more:hover .button-shape-2 {
+  background-color: #3E54AC;
+}
+
+.Card-more:hover .button-shape-3 {
+  background-color: #655DBB;
+}
+
+.Card-more:hover .button-shape-4 {
+  background-color: #BFACE2;
+}
+
+
+.footer-bg {
+  background: linear-gradient(135deg, #e2e8f0, #cbd5e1
+  );
+
+  animation: gradient 8s ease-in-out infinite;
+  background-size: 200% 200%;
+  bottom: 0;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+@keyframes shape-1 {
+  33% {
+    transform: translate(-28px, 0);
+  }
+}
+
+@keyframes shape-2 {
+  33% {
+    transform: translate(-28px, 28px);
+  }
+}
+
+@keyframes shape-3 {
+  33% {
+    transform: translate(20px, 4px);
+  }
+}
+
+@keyframes shape-4 {
+  33% {
+    transform: translate(48px, 0);
+  }
+}
+
+
+
+@media (min-width: 1162px) {
+  .skills {
+    background-size: cover;
+  }
 }
