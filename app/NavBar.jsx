@@ -7,12 +7,9 @@ function NavBar() {
             <h1 className='gradient-text text-3xl'>Portfolio</h1>
         </div>
 
-        <div className='flex gap-7 text-xl'>
+        <div className='flex gap-5 text-xl'>
             <Link href='/' className='hover:underline underline-offset-8'>Home</Link>
-            <Link href='/' className='hover:underline underline-offset-8'>About</Link>
-            <Link href='/' className='hover:underline underline-offset-8'>Services</Link>
             <Link href={'/projects'} className='hover:underline underline-offset-8'>Projects</Link>
-            <Link href='/' className='hover:underline underline-offset-8'>Contact</Link>
         </div>
     </nav>
   )
