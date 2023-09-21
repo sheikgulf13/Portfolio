@@ -9,7 +9,10 @@ function NavBar() {
 
         <div className='flex gap-5 text-xl'>
             <Link href='/' className='hover:underline underline-offset-8'>Home</Link>
+            <Link href='/' className='hover:underline underline-offset-8'>About</Link>
+            <Link href='/' className='hover:underline underline-offset-8'>Services</Link>
             <Link href={'/projects'} className='hover:underline underline-offset-8'>Projects</Link>
+            <Link href='/' className='hover:underline underline-offset-8'>Contact</Link>
         </div>
     </nav>
   )
