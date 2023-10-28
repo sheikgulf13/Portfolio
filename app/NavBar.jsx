@@ -27,9 +27,7 @@ function NavBar() {
     }
   }
   
-  if (typeof window !== undefined) {
-    window.addEventListener('scroll', changeBackground)
-  }
+  typeof window !== undefined && window.addEventListener('scroll', changeBackground)
   
   return (
     <motion.nav
