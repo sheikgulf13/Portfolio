@@ -26,7 +26,10 @@ function NavBar() {
       setNavbar(false)
     }
   }
-  window.addEventListener('scroll', changeBackground)
+  
+  if (typeof window !== undefined) {
+    window.addEventListener('scroll', changeBackground)
+  }
   
   return (
     <motion.nav
