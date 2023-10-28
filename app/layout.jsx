@@ -1,6 +1,8 @@
+
 import './globals.css';
 import NavBar from './NavBar';
 import Footer from './footer';
+import Lenis from '@studio-freight/lenis'
 
 export const metadata = {
   title: 'Sheik Gulfaan',
@@ -8,9 +10,10 @@ export const metadata = {
 }
 
 export default function RootLayout({ children }) {
+  
   return (
     <html lang="en">
-      <body className='font-main'>
+      <body className='font-main transition-colors duration-1000 scroll-smooth w-full bg-white dark:bg-zinc-800'>
         <NavBar />
         {children}
         <Footer />
