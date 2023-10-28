@@ -20,7 +20,7 @@ function NavBar() {
   }, [darkMode])
 
   const changeBackground = () => {
-    if(window && window.scrollY >= 80) {
+    if(typeof window !== undefined && window.scrollY >= 80) {
       setNavbar(true)
     } else {
       setNavbar(false)
