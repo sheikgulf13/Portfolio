@@ -1,6 +1,6 @@
 
 import './globals.css';
-import NavBar from '../sections/NavBar';
+import NavBar from '../components/NavBar';
 
 export const metadata = {
   title: 'Sheik Gulfaan',
