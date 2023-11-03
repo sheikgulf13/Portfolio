@@ -14,10 +14,12 @@ export const navVariants = {
       transition: {
         type: 'spring',
         stiffness: 80,
-        delay: 1,
+        delay: 0,
       },
     },
   };
+
+ 
   
   export const slideIn = (direction, type, delay, duration) => ({
     hidden: {
@@ -142,7 +144,7 @@ export const navVariants = {
   export const footerVariants = {
     hidden: {
       opacity: 0,
-      y: 50,
+      y: 80,
       transition: {
         type: 'spring',
         stiffness: 300,
@@ -155,7 +157,7 @@ export const navVariants = {
       transition: {
         type: 'spring',
         stiffness: 80,
-        delay: 0.5,
+        delay: 0,
       },
     },
   };
