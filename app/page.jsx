@@ -1,10 +1,10 @@
 
-import Hero from '../sections/hero';
-import MyProject from '../sections/myProject';
-import About from '../sections/about';
-import Services from '../sections/services';
-import Footer from '../sections/footer';
-import Contact from '../sections/contact';
+import Hero from './hero';
+import MyProject from './myProject';
+import About from './about';
+import Services from './services';
+import Footer from './footer';
+import Contact from './contact';
 
 export default function Home() {
  

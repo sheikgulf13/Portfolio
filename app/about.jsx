@@ -1,4 +1,5 @@
 "use client";
+
 import BadgeIcon from '@mui/icons-material/Badge';
 import WindowIcon from '@mui/icons-material/Window';
 import Link from 'next/link';
@@ -23,7 +24,7 @@ function About() {
       <div className='[perspective:1000px] z-10'>
         <motion.div variants={fadeIn('right', 'tween', 0, 0)}  className='hidden md:hidden lg:flex p-5 img-div rounded-md z-10 [background:linear-gradient(135deg,rgba(255,255,255,0.5),rgba(255,255,255,0.3))] dark:[background:linear-gradient(135deg,rgba(255,255,255,0.2),rgba(255,255,255,0))] !transition-all !duration-1000 dark:!transition-all dark:!duration-1000'
         >
-            <Image src="https://img.freepik.com/premium-vector/cartoon-man-is-sitting-computer-wearing-headphones_120309-124.jpg" alt="" className='rounded-md' unoptimized
+            <img src="https://img.freepik.com/premium-vector/cartoon-man-is-sitting-computer-wearing-headphones_120309-124.jpg" alt="" className='rounded-md'
             />
         </motion.div>
       </div>
