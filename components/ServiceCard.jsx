@@ -19,7 +19,7 @@ export const ServiceCard = ({ name, title, element, textStyles, style2, style })
                 </div>
                 <div className={`${style2} flex flex-col py-0 my-0`}>
                     <h4 className='text-md md:text-lg text-black dark:text-white font-bold'>{name}</h4>
-                    <span className='text-sm md:text-sm text-black dark:text-white font-light text-start font-["Monserrat]'>{title}</span>
+                    <span className='text-sm md:text-sm text-black dark:text-white font-light text-start'>{title}</span>
                 </div>
             </div>
             <div className="pointer-events-none absolute inset-0 group-hover:bg-[linear-gradient(rgba(255,255,255,0.7)_20%,transparent_80%)]" />
