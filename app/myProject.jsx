@@ -59,6 +59,7 @@ function myProject() {
                   title={project.name}
                   desc={project.description}
                   liveSite={project.url}
+                  github={project.github}
                 />
               )
             }) : active === 'Fullstack' ? projects?.map((project, index) => {
@@ -70,6 +71,7 @@ function myProject() {
                     title={project.name}
                     desc={project.description}
                     liveSite={project.url}
+                    github={project.github}
                   />
                 )
               }
@@ -82,6 +84,7 @@ function myProject() {
                     title={project.name}
                     desc={project.description}
                     liveSite={project.url} 
+                    github={project.github}
                   />
                 )
               }
@@ -94,6 +97,7 @@ function myProject() {
                     title={project.name}
                     desc={project.description}
                     liveSite={project.url} 
+                    github={project.github}
                   />
                 )
               }

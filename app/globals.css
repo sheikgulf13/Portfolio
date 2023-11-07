@@ -498,32 +498,34 @@ body *,
     width: 250px !important;
   }
   .gradient-01 {
-    background-image: linear-gradient(
+    background: linear-gradient(
       350deg,
       hsl(0, 76%, 51%) 0%,
-      hsl(284deg,70%,73%) 26%,
+      hsl(282deg,60%,71%) 26%,
       hsl(257deg 70% 86%) 39%,
       hsl(202deg 92% 90%) 50%,
       hsl(215deg 77% 81%) 61%,
       hsl(221deg 73% 70%) 74%,
       hsl(220deg 76% 51%) 100%
     );
+   
     filter: blur(125px);
   }
 }
 
 @media (min-width: 768px) {
   .gradient-011 {
-    background-image: linear-gradient(
+    background: linear-gradient(
       270deg,
       hsl(0, 76%, 51%) 0%,
-      hsl(284deg 70% 73%) 26%,
+      hsl(282, 60%, 71%) 26%,
       hsl(257deg 70% 86%) 39%,
       hsl(202deg 92% 90%) 50%,
       hsl(215deg 77% 81%) 61%,
       hsl(221deg 73% 70%) 74%,
       hsl(220deg 76% 51%) 100%
     );
+    
     filter: blur(125px);
   }
 }
