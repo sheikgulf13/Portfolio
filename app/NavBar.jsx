@@ -63,7 +63,7 @@ function NavBar() {
       variants={navVariants}
       initial='hidden'
       whileInView='show'
-      className={`${navbar && 'glass !border-none !backdrop-blur-xl !transition-all !duration-1000 !rounded-none shadow-xl dark:!shadow-xl [background:linear-gradient(135deg,rgba(255,255,255,0.3),rgba(255,255,255,0))] dark:[background:linear-gradient(135deg,rgba(255,255,255,0.2),rgba(255,255,255,0))]'} text-black dark:text-white  flex justify-between items-center px-10 md:px-10 lg:px-20 py-4 !transition-all !duration-1000  fixed md:fixed w-full z-50 overflow-hidden`}>
+      className={`${navbar && 'glass !border-none !backdrop-blur-xl !transition-all !duration-1000 !rounded-none shadow-xl dark:!shadow-xl [background:linear-gradient(135deg,rgba(255,255,255,0.3),rgba(255,255,255,0))] dark:[background:linear-gradient(135deg,rgba(255,255,255,0.2),rgba(255,255,255,0))]'} text-black dark:text-white  flex justify-between items-center px-10 md:px-10 lg:px-20 py-4 !transition-all !duration-1000  fixed md:fixed w-full z-50 `}>
         <div>
             <h1 className='text-black dark:text-white text-2xl md:text-3xl font-bold'>Portfolio</h1>
         </div>

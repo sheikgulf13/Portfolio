@@ -10,7 +10,7 @@ export default function Home() {
  
   
   return (
-    <main className='main relative  scroll-smooth overflow-hidden sm:overflow-hidden md:overflow-hidden' id='section'>
+    <main className='main scroll-smooth overflow-hidden sm:overflow-hidden md:overflow-hidden' id='section'>
       <Hero />
       <About />
       <Services />

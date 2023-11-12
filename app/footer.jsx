@@ -13,7 +13,7 @@ function footer() {
         variants={footerVariants}
         initial='hidden'
         whileInView='show'
-        className='z-50 text-black dark:text-white flex flex-col justify-center items-center gap-5 py-10 relative'
+        className='text-black dark:text-white flex flex-col justify-center items-center gap-5 py-10 relative'
     >
         <div className='footer-gradient !w-[40%] z-0 overflow-hidden '/>
         <motion.div

@@ -21,8 +21,8 @@ function myProject() {
     <motion.div variants={staggerContainer}
     initial='hidden'
     whileInView='show'
-    viewport={{once: false, amount: 0}} id='projects' className='flex flex-col text-black dark:text-white justify-center items-center py-10 pb-24 relative'>
-        <div className='absolute gradient-02 z-0 overflow-hidden'/>
+    viewport={{once: false, amount: 0}} id='projects' className='w-full flex flex-col text-black dark:text-white justify-center items-center py-10 pb-24 relative'>
+        <div className='absolute gradient-04 z-0 overflow-hidden'/>
         <TypingText textStyles='text-2xl md:text-3xl font-bold my-5 z-10' title='My Projects' />
 
         <motion.div variants={fadeIn('right', 'spring', 0.2, 0)} className='flex flex-col md:gap-10 z-10 items-center !transition-all !duration-1000 dark:!transition-all dark:!duration-1000'>
@@ -50,7 +50,7 @@ function myProject() {
             </button>
           </div>
 
-          <motion.div layout className='relative md:w-[70vw] flex flex-nowrap md:flex-wrap gap-5 md:gap-16 project-cat m-5 items-center md:justify-center z-10'>
+          <motion.div layout className='project-cat md:w-[70vw] flex flex-nowrap md:flex-wrap gap-5 md:gap-16 m-5 items-center md:justify-center'>
             {onWindow || active === 'all' ? projects?.map((project, index) => {
               return (
                 <ProjectCard

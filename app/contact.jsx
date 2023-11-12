@@ -14,7 +14,7 @@ const Contact = () => {
         initial='hidden'
         whileInView='show'
         id='contact'
-        className='flex flex-col py-10 items-center z-10 relative pb-20'
+        className='flex flex-col py-10 items-center relative pb-20'
     >
       <div className='absolute feedback-gradient z-0 overflow-hidden'/>
       <TypingText title='Hire Me' textStyles='text-black dark:text-white text-2xl md:text-3xl pt-10 pb-10 text-black dark:text-white font-bold' />

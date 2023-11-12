@@ -19,8 +19,8 @@ function About() {
     initial='hidden'
     whileInView='show'
     viewport={{once: false, amount: 0.25}}
-     id='about' className='relative z-4 flex flex-col md:flex-row md:justify-center gap-x-36 items-start pb-1 md:pb-4 about-div md:h-screen lg:h-screen ' >
-      <div className='absolute gradient-03 z-0 overflow-hidden'/>
+     id='about' className='flex flex-col md:flex-row md:justify-center md:gap-x-36 items-center md:items-start pb-1 md:pb-4 about-div md:h-screen lg:h-screen relative' >
+      <div className='gradient-02 z-0 overflow-hidden'/>
       <div className='[perspective:1000px] z-10'>
         <motion.div variants={fadeIn('right', 'tween', 0, 0)}  className='hidden md:hidden lg:flex p-5 img-div rounded-md z-10 [background:linear-gradient(135deg,rgba(255,255,255,0.5),rgba(255,255,255,0.3))] dark:[background:linear-gradient(135deg,rgba(255,255,255,0.2),rgba(255,255,255,0))] !transition-all !duration-1000 dark:!transition-all dark:!duration-1000'
         >

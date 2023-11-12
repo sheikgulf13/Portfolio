@@ -12,12 +12,12 @@ import { TypingText } from '@/components/CustomTexts';
 
 function hero() {
   return (
-    <div className='hero relative flex flex-col dark:bg-opacity-30 items-center justify-center h-screen max-w-screen' id='home'>
+    <div className='hero flex flex-col items-center justify-center h-screen max-w-screen relative z-10' id='home'>
         {/*<div className='overflow-hidden'>
             <Image className='absolute inset-0 hero-img !h-full w-full object-cover bg-no-repeat !transition-all !duration-1000' src={backgroundImg} alt='hero-img'/>
             <div className='dark:absolute dark:inset-0 dark:h-full dark:bg-black dark:opacity-50 dark:!transition-all dark:!duration-1000'></div>
   </div>*/}
-        <div className='absolute w-full inset-0 gradient-01 gradient-011'/>
+        <div className='absolute w-full inset-0 gradient-01 gradient-011 z-0'/>
         <motion.div
             variants={staggerContainer}
             initial='hidden'
